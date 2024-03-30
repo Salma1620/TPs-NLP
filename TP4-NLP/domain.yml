@@ -1,0 +1,55 @@
+version: "3.1"
+
+intents:
+  - greet
+  - inform
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - hello_world
+  - thank_you
+  - ask_location
+  - get_weather
+  - ask_mood
+
+actions:
+  - action_get_weather
+
+responses:
+  utter_hello_world:
+  - text: "hello world this is just for testing "
+
+  utter_ask_mood:
+  - text: "I'm great!! Can I help you ?"
+
+  utter_location:
+  - text: "actually,I don't have a home .I'm a homeless"
+
+  utter_thank_you:
+  - text: "You're welcome! Feel free to ask if you need further assistance."
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
